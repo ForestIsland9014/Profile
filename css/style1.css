@@ -19,7 +19,7 @@ header{
     justify-content: space-evenly
 }
 h1#headstr {
-    margin: 10px auto 0px auto;
+    margin: 12px auto 0px auto;
 }
 
 div#pop {
@@ -420,7 +420,7 @@ main {
 @media screen and (max-width: 360px) {
     #headstr {
         font-size: 20px;
-        margin: 20px auto 0px auto!important;
+        margin: 22px auto!important;
     }
     #profile_top {
         flex-wrap: wrap!important;
