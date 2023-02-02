@@ -16,10 +16,14 @@ header{
     display: flex;
     flex-direction: row;
     color: #fff;
-    justify-content: space-evenly
+    justify-content: center;
+    align-items: center;
 }
-h1#headstr {
-    margin: 12px auto 0px auto;
+
+#header_icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
 }
 
 div#pop {
@@ -434,9 +438,12 @@ main {
 }
 
 @media screen and (max-width: 360px) {
+    #header_icon {
+        width: 25px;
+        height: 25px;
+    }
     #headstr {
         font-size: 20px;
-        margin: 22px auto!important;
     }
     #profile_top {
         flex-wrap: wrap!important;
