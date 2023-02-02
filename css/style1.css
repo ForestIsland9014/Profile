@@ -92,38 +92,43 @@ main {
     border: 4px solid rgb(0 0 0 / 38%);
     background-color: rgb(4 60 78);
 }
-.border h1 {
-    width: 50%;
-}
+
 .border p {
     width: 100%;
 }
 .profile_txt {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
-.right {
-    padding: 0px 0px 0px 40px;
-}
-.left {
-    padding: 0px 40px 0px 15px;
 }
 
+
+.profile_sub_img {
+    max-width: 640px;
+    width: 95%;
+    height: auto !important;
+}
 .profile_parent {
     width: 90%;
 }
-.profile_sub_img {
-    max-width: 640px;
+.profile_txt.right figure {
     width: 50%;
-    height: auto !important;
+    float: left;
+    margin-right: 20px;
 }
+.profile_txt.left figure {
+    width: 45%;
+    float: right;
+    margin-left: 20px;
+}
+.profile_txt.left figure img {
+    width: 100%;
+}
+
 
 .link_block {
     background-color: #28556a;
     border-radius: 1vh;
     padding: 13px 20px;
+    max-width: 380px;
     width: 380px;
     display: flex;
     align-items: center;
@@ -308,9 +313,7 @@ main {
     .border {
         flex-wrap: wrap;
     }
-    .profile_txt {
-        padding: 20px 0px;
-    }
+
     .left {
         order: 1;
     }
@@ -330,6 +333,7 @@ main {
         height: 46vw;
     }
 }
+
 
 @media screen and (max-width: 680px) {
     #profile_top {
@@ -364,6 +368,7 @@ main {
         width: 130px;
     }
     .link_block {
+        width: auto;
         padding: 6px 12px;
     }
     .link_block h2 {
@@ -393,6 +398,15 @@ main {
         width: 50%;
         text-align: center;
     }
+}
+@media screen and (max-width: 515px) {
+    .profile_txt.right figure{
+        width: 100%;
+    }
+    .profile_txt.left figure{
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 430px) {
