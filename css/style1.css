@@ -149,6 +149,12 @@ main {
     background-color: #000;
     border: 3px solid #fff;
 }
+.uls ul {
+    list-style: inherit;
+}
+#second_ul {
+    padding-left:30px;
+}
 
 .uls ul li {
     margin-left: 30px;
@@ -156,9 +162,7 @@ main {
 .portfolio_explanation_block ul li {
     margin-left: 30px;
 }
-#second_ul {
-    padding-left:30px;
-}
+
 
 #portfolios {
     display: flex;
@@ -266,6 +270,9 @@ main {
     border-radius: 2vh;
     margin-top: 25px;
     background-color: #0b6473;
+}
+.portfolio_explanation_block p {
+    margin-top: 1%;
 }
 
 .change_a_tag {
