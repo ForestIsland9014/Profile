@@ -325,6 +325,9 @@ main {
     .portfolio_link {
         margin : 18px;
     }
+    .slider img {
+        height: 46vw;
+    }
 }
 
 @media screen and (max-width: 680px) {
