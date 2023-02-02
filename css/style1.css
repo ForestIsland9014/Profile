@@ -1,0 +1,443 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: rgb(42, 42, 42);
+    color: #fff;
+    
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    background-color: #14a3cb;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-evenly
+}
+h1#headstr {
+    margin: 10px auto 0px auto;
+}
+
+div#pop {
+    top: 300px;
+    left: 50%;
+    transform: translateY(-80%) translateX(-50%);
+    background-color: #fff;
+    color: #000;
+    padding: 2px 10px 0px 5px;
+    text-align: center;
+    display:block;
+    position:absolute;
+    z-index:9998;
+    cursor: pointer;
+}
+
+#main {
+    z-index:0;
+}
+
+#profile_btn {
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d40f0f;
+    font-size: 30px;
+    padding: 5px;
+    width: 180px;
+    appearance: none;
+    outline: none;
+    transform: rotate(12deg);
+    border-radius: 100vh;
+
+}
+
+#profile_top {
+    display:flex;
+    justify-content: center;
+    padding: 30px;
+    width:  100%;
+}
+#profile_img {
+    max-width: 160px;
+    width : 160px;
+    border: 5px solid #fff;
+    border-radius: 100vh;
+}
+
+
+#profile_name {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.profile {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.border {
+    padding: 25px;
+    display: flex;
+    border: 4px solid rgb(0 0 0 / 38%);
+    background-color: rgb(4 60 78);
+}
+.border h1 {
+    width: 50%;
+}
+.border p {
+    width: 100%;
+}
+.profile_txt {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.right {
+    padding: 0px 0px 0px 40px;
+}
+.left {
+    padding: 0px 40px 0px 15px;
+}
+
+.profile_parent {
+    width: 90%;
+}
+.profile_sub_img {
+    max-width: 640px;
+    width: 50%;
+    height: auto !important;
+}
+
+.link_block {
+    background-color: #28556a;
+    border-radius: 1vh;
+    padding: 13px 20px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 3px solid #000;
+}
+.link_block img {
+    border: 2px solid #000;
+}
+.link_block .link {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+}
+.link_block .link p {
+    font-size: 10px;
+}
+
+.uls {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1vh;
+    background-color: #000;
+    border: 3px solid #fff;
+}
+
+.uls ul li {
+    margin-left: 30px;
+}
+.portfolio_explanation_block ul li {
+    margin-left: 30px;
+}
+#second_ul {
+    padding-left:30px;
+}
+
+#portfolios {
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.portfolio_link {
+    height: 270px;
+    padding: 15px 5px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 1vh;
+    margin: 2%;
+
+}
+.portfolio_link img {
+    width: 350px;
+    height: 192px;
+    
+}
+.portfolio_link h3 {
+    padding-left: 10px;
+}
+.portfolio_link p {
+    font-size: 12px;
+    padding-left: 15px;
+}
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:100%;
+    margin:0 auto;
+    margin-top: 20px;
+    
+}
+
+.slider img {
+    width: auto;
+    height: 32vw;
+    border: 1px solid #fff;
+}
+
+.slider .slick-slide {
+  transform: scale(0.8);/*左右の画像のサイズを80%に*/
+  transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+  transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+  opacity: 1;/*透過なし*/
+}
+
+
+
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+  margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:rgb(8, 159, 197);/*ドットボタンの現在地表示の色*/
+}
+#page_footer {
+    background-color: rgb(27, 27, 27);
+    margin-top: 100px;
+    padding: 30px;
+    text-align: center;
+    font-size: 9px;
+}
+
+#portfolio_main_img{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#portfolio_main_img img {
+    width: 60%;
+    border-radius: 1vh;
+}
+.portfolio_explanation{
+    padding: 40px 20%;
+}
+.portfolio_explanation_block{
+    padding: 15px;
+    box-shadow: -3px 0px 100px 1px #00000033;
+    border-radius: 2vh;
+    margin-top: 25px;
+    background-color: #0b6473;
+}
+
+.change_a_tag {
+    text-decoration: none;
+    color: #fff;
+}
+.tab {
+    width: 90%;
+    justify-content: flex-end;
+}
+.tab li {
+    padding-left:0;
+    margin-bottom: 30px;
+}
+.tab li a {
+    margin: 0px;
+    background: rgb(42, 42, 42);
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 50px;
+    
+}
+#tab_1{
+    border-radius: 0px 0px 0px 15px;
+}
+#tab_2{
+    border-radius: 0px 0px 15px 0px;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .border {
+        flex-wrap: wrap;
+    }
+    .profile_txt {
+        padding: 20px 0px;
+    }
+    .left {
+        order: 1;
+    }
+    .profile_txt h1 {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .portfolio_link {
+        margin : 18px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #profile_top {
+        align-items: center;
+    }
+    #profile_name {
+        font-size: 12px;
+        margin-top: 0px;
+        margin-left: 14px;
+    }
+    #department {
+        font-size: 0;
+        margin-top: 0px!important;
+    }
+    #department::before {
+        white-space: pre;
+        
+        font-size: 12px;
+        content: "情報システム学科\Aフューチャーデバイス専攻";
+    }
+    #my_name {
+        font-size: 0!important;
+    }
+    #my_name::before {
+        margin-top: 5px;
+        white-space: pre;
+        font-size: 30px!important;
+        content:"森嶋 空輝";
+    }
+    
+    #profile_img {
+        width: 130px;
+    }
+    .link_block {
+        padding: 6px 12px;
+    }
+    .link_block h2 {
+        font-size: 1rem;
+    }
+    .link_block p {
+        display: none;
+    }
+    .profile_sub_img {
+        width: 100%;
+    }
+    .link_block img {
+        min-width: 65px;
+        width: 20% !important;
+        height: auto;
+    }
+    #portfolio_main_img img {
+        width: 90%;
+    }
+    .portfolio_explanation {
+        padding: 6%;
+    }
+    .tab {
+        justify-content: center;
+    }
+    .tab li {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .portfolio_link {
+        height: auto;
+    }
+    .portfolio_link img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+@media screen and (max-width: 380px) {
+    .link_block {
+        padding: 6px 2px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .tab li a {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #headstr {
+        font-size: 20px;
+        margin: 20px auto 0px auto!important;
+    }
+    #profile_top {
+        flex-wrap: wrap!important;
+    }
+    #profile_img {
+        min-width: 90px;
+        width: 70%;
+    }
+    #profile_img_parent {
+        display: flex;
+        justify-content: space-around;
+    }
+    #profile_name {
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    #second_ul {
+        padding-left: 0px!important;
+    }
+}
+
+@media screen and (max-width: 296px) {
+    #profile_name {
+        text-align: center;
+    }
+    #second_ul {
+        margin-top: 15px;
+        padding-left: 0px!important;
+    }
+}

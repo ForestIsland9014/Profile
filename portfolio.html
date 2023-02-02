@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>森嶋空輝 - ポートフォリオ</title>
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-4-1/css/5-4-1.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <script src="./js/main.js"></script>
+    <link rel="icon" type="image/png" href="./img/icon.png">
+</head>
+<body>
+    <header><h1 id="headstr">Portfolio</h1></header>
+    <main>
+        <div id="profile_top">
+            <div id="profile_img_parent">
+                <img src="./img/profile_img.png" id="profile_img">
+            </div>
+            <div id="profile_name">
+                <p>中央情報大学校</p>
+                <p style="margin-top: -3px;" id="department">情報システム学科 フューチャーデバイス専攻</p>
+                <p style="font-size: 30px;" id="my_name">森嶋 空輝 - Morishima Sora</p>
+            </div>
+        </div>
+
+        <div style="border: 1px solid #fff; width: 90%; margin-top: 1%;"></div>
+        <ul class="tab">
+            <li><a href="./profile.html" id="tab_1">&nbsp;Profile&nbsp;</a></li>
+            <li><a href="./portfolio.html" id="tab_2" style="background: #14a3cb;">Portfolio</a></li>
+        </ul>
+
+        <div id="portfolios">
+            <div class="portfolio_link" onclick="open_url('./templates/1.html')" onmouseover="hover(this)">
+                <img src="./img/1_1.jpg">
+                <h3>3Dクレーンゲーム</h3>
+                <p>Android向けアプリ</p>
+            </div>
+            <div class="portfolio_link" onclick="open_url('./templates/2.html')" onmouseover="hover(this)">
+                <img src="./img/2_1.jpg">
+                <h3>VR版 3Dレーンゲーム</h3>
+                <p>Meta Quest向けアプリ</p>
+            </div>
+            <div class="portfolio_link" onclick="open_url('./templates/3.html')" onmouseover="hover(this)">
+                <img src="./img/3_1.jpg">
+                <h3>雲の上のコーヒー屋</h3>
+                <p>Webサイト</p>
+            </div>
+            <div class="portfolio_link" onclick="open_url('./templates/4.html')" onmouseover="hover(this)">
+                <img src="./img/4_1.jpg">
+                <h3>Twitter違法情報<br>収集システム</h3>
+                <p>Windows版システム</p>
+            </div>
+            <div class="portfolio_link" onclick="open_url('./templates/5.html')" onmouseover="hover(this)">
+                <img src="./img/5_1.jpg">
+                <h3>Twitter違法情報<br>確認システム</h3>
+                <p>Android向け</p>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer id="page_footer">
+        <p>お問い合わせ等ありましたら下記のメールアドレスまでご連絡ください<br>Email: f22ba094@chuo.ac.jp</p>
+    </footer>
+    
+</body>
+</html>
