@@ -87,7 +87,7 @@ main {
 }
 
 .border {
-    padding: 25px;
+    padding: 15px 25px 25px 25px;
     display: flex;
     border: 4px solid rgb(0 0 0 / 38%);
     background-color: rgb(4 60 78);
@@ -113,11 +113,13 @@ main {
     width: 50%;
     float: left;
     margin-right: 20px;
+    margin-top: 5px;
 }
 .profile_txt.left figure {
     width: 45%;
     float: right;
     margin-left: 20px;
+    margin-top: 5px;
 }
 .profile_txt.left figure img {
     width: 100%;
