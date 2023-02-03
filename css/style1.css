@@ -182,7 +182,7 @@ main {
     width: 95%;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+    margin-top: 24px;
 }
 .portfolio_link {
     height: 270px;
