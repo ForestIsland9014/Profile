@@ -287,6 +287,9 @@ main {
 .portfolio_explanation_block p {
     margin-top: 14px;
 }
+.portfolio_explanation_block ul {
+    margin-top: 14px;
+}
 
 .change_a_tag {
     text-decoration: none;
