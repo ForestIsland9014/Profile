@@ -512,7 +512,7 @@ main {
         padding: 5px;
     }
     #Contact_form {
-        width: 90%;
+        width: 90%!important;
         padding: 30px;
     }
 }
