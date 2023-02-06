@@ -36,8 +36,6 @@ function get_bulletin_board() {
             
             document.getElementById("bulletin_board").appendChild(div_tag);
             
-
-            console.log(json[i].name, json[i].message);
         }
         document.getElementById("loading_now").style.display = "none";
     });
