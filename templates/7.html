@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    
+    <title>Portfolio - 違法薬物-自動分類AI</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <header><img src="../img/icon.png" id="header_icon"><a href="../portfolio.html" class="change_a_tag"><h1 id="headstr">Portfolio</h1></a></header>
+    <div>
+
+        <ul class="slider">
+            <li><img src="../img/7_1.jpg" alt=""></li>
+            <li><img src="../img/7_2.jpg" alt=""></li>
+            <li><img src="../img/7_3.jpg" alt=""></li>
+            <li><img src="../img/7_4.jpg" alt=""></li>
+        </ul>
+        <div class="portfolio_explanation">
+            <h1>違法薬物-自動分類AI</h1>
+            <div class="portfolio_explanation_block">
+                <h2>概要</h2>
+                <p>Meta社の開発したFastTextを用いて開発した違法薬物販売ツイート検知AIです。
+                    AIにツイートテキストを入力すると該当しているかどうかの結果を出力する仕様です。
+                    そしてこのAIをTwitter違法情報収集システムに組み込み、違法情報のみを収集するシステムを開発しました。
+                    学習データは合計で101402件で、精度は98%程ですが違法ではない情報を違法と誤判定することはありません。
+                    新たな隠語や、非違法情報に高確率で含まれるワードが文章内に多く含まれている場合、違法なツイートを非違法と判定することがあります。
+            </p>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>制作期間</h2>
+                <p>2022年8月～2022年12月</p>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>プロジェクトチーム人数</h2>
+                <p>6人</p>
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>開発環境</h2>
+                <ul>
+                    <li>Pycharm</li>
+                    <li>VSC</li>
+                    <li>Github</li>
+                </ul>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>使用言語</h2>
+                <ul>
+                    <li>Python</li>
+                </ul>    
+            </div>  
+            <div class="portfolio_explanation_block">
+                <h2>こだわり</h2>
+                <p>非違法情報を違法と誤判定しないことが絶対条件だったので、学習データの選別やデータクレンジングには
+                    多くの時間を割きました。また当初は違法情報か非違法情報かの2分類を行っていましたが、曖昧な内容の
+                    ツイートが散見された為、違法と断定できない情報という種類を追加し、多値分類に変更したことで、
+                    より違法情報検出の精度が向上しました。
+                </p>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>苦労したこと</h2>
+                <p>AIに関する知識は一切なく、手探り状態からのスタートだったのでとても苦労しました。
+                    書籍やwebサイトからの情報だけでなくプロジェクトメンバーである先輩と意見を交わしながら
+                   知識を深めていきました。また、学習データも当初は1万件～2万件程を想定していましたが、
+                   精度の推移から学習データが足りず過学習状態であると仮説を立て、多くの時間をかけながら
+                   データを収集しました。データセットの収集ではデータとして不適切なものも含まれていた為、
+                   すべて目視で確認を行いました。この作業が一番苦労しましたが、精度が格段に向上したので
+                   本当に報われた気がしました。
+                </p>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>身についたこと</h2>
+                <p>AIに関する知識や具体的な開発方法などを学ぶことができました。
+                    また、先輩や周りの先生の協力なしではここまで精度を上げることはできませんでした。
+                   プロジェクトメンバーと1つの目標を達成する楽しさや大変さを学べました。
+                </p>    
+            </div>
+
+        </div>
+
+    </div>
+    
+    <footer id="page_footer">
+        <p>お問い合わせ等ありましたら下記のメールアドレスまでご連絡ください<br>Email: f22ba094@chuo.ac.jp</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>    
+    <script>
+    </script>
+</body>
+</html>

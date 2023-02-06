@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    
+    <title>Portfolio - ビンゴ確認システム</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <header><img src="../img/icon.png" id="header_icon"><a href="../portfolio.html" class="change_a_tag"><h1 id="headstr">Portfolio</h1></a></header>
+    <div>
+
+        <ul class="slider">
+            <li><img src="../img/6_1.jpg" alt=""></li>
+            <li><img src="../img/6_2.jpg" alt=""></li>
+            <li><img src="../img/6_3.jpg" alt=""></li>
+            <li><img src="../img/6_4.jpg" alt=""></li>
+        </ul>
+        <div class="portfolio_explanation">
+            <h1>ビンゴ確認システム</h1>
+            <div class="portfolio_explanation_block">
+                <h2>概要</h2>
+                <p>学校のイベントで行われるビンゴ大会で来場者がビンゴしているかQRで確認を行えるシステムです。
+                    イベントではUnityで作成されたビンゴマシンがスクリーンに投影され、
+                    来場者はWeb上に表示されるビンゴカードに穴を空け、ビンゴした際にQRコードが表示されます。
+                    そのQRコードにはビンゴした列の数字が配列で格納されており、このシステムに読込ませると
+                    既に排出されたビンゴの数字に配列の数字が含まれているかを即時に確認し、結果を画面に表示させます。
+                </p>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>制作期間</h2>
+                <p>2022年12月～2022年12月</p>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>プロジェクトチーム人数</h2>
+                <p>2人</p>
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>開発環境</h2>
+                <ul>
+                    <li>Pycharm</li>
+                    <li>Windows11</li>
+                </ul>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>使用言語</h2>
+                <ul>
+                    <li>Python</li>
+                </ul>    
+            </div>  
+            <div class="portfolio_explanation_block">
+                <h2>こだわり</h2>
+                <p>非エンジニアが操作した場合を考え、GUIはシンプルにすることを心がけました。
+                    最低限の情報である「来場者がビンゴした数列」と「確認結果」のみを表示することで、
+                    迅速かつ効率的に確認作業を行えるようになっています。</p>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>苦労したこと</h2>
+                <p>カメラの映像を出力する際にGUIに表示するサイズを細かに決めることができませんでした。その為、
+                    異なるディスプレイサイズのPCでシステムを稼働させると下に表示される文字が見切れてしまうことがあったので
+                    正常に表示させるまで多くの時間を費やし、プロジェクト仲間に何度もデバッグを頼んでしまい迷惑をかけてしまうことがありました。
+                </p>    
+            </div>
+            <div class="portfolio_explanation_block">
+                <h2>身についたこと</h2>
+                <p>OpenCVを使用したQRコードの読込み方法やTkinterに関する知識が深まったと実感しています。
+                    またプロジェクト仲間とイベントを成功させるために様々なことを乗り越え、一緒に成長することの楽しさを学びました。</p>    
+            </div>
+
+        </div>
+
+    </div>
+    
+    <footer id="page_footer">
+        <p>お問い合わせ等ありましたら下記のメールアドレスまでご連絡ください<br>Email: f22ba094@chuo.ac.jp</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>    
+    <script>
+    </script>
+</body>
+</html>

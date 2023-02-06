@@ -101,6 +101,7 @@ main {
 
 .border p {
     width: 100%;
+    line-height: 1.7em;
 }
 .profile_txt {
     width: 100%;
@@ -155,6 +156,7 @@ main {
 }
 
 .uls {
+    max-width: 240px;
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -309,13 +311,14 @@ main {
     color: #fff;
     border: 1px solid #fff;
     padding: 5px 18px;
+
     
 }
 #tab_1{
     border-radius: 0px 0px 0px 15px;
 }
 #tab_2{}
-#tab_3{
+#tab_4{
     border-radius: 0px 0px 15px 0px;
 }
 #Contact_form {
@@ -326,6 +329,7 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-left: -4px;
 }
 #form div{
     width: 100%;
@@ -369,6 +373,17 @@ main {
     box-shadow: 0px 0px 14px 0px;
 }
 
+#bulletin_board {
+    margin-top: 30px;
+    width: 100%;
+}
+.message_block {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    margin: 20px 0px;
+}
+
 
 @media screen and (max-width: 1300px) {
     .border {
@@ -395,8 +410,10 @@ main {
     }
 }
 
-
 @media screen and (max-width: 680px) {
+    .uls {
+        max-width: 100%;
+    }
     #profile_top {
         align-items: center;
     }
@@ -456,7 +473,7 @@ main {
         justify-content: center;
     }
     .tab li {
-        width: 33.33%;
+        width: 25%;
         text-align: center;
     }
 }
@@ -466,6 +483,9 @@ main {
     }
     .profile_txt.left figure{
         width: 100%;
+    }
+    #down_img {
+        width: 50px!important;
     }
     
 }
@@ -522,6 +542,9 @@ main {
     }
     #second_ul {
         padding-left: 0px!important;
+    }
+    .tab li a {
+        font-size: 3vw;
     }
 }
 
