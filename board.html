@@ -36,7 +36,7 @@
         <div style="position: absolute;">
             <img src="./img/down.png" id="down_img" style="width: 70px;position: fixed;bottom: 10px;right: 10px;" onclick="var element = document.documentElement; var bottom = element.scrollHeight - element.clientHeight; window.scroll(0, bottom);">
         </div>
-        <div id="Contact_form">
+        <div id="Contact_form" style="width: 450px;">
             <h1 style="text-align: center;">自由掲示板</h1>
             <div id="bulletin_board">
                 <div class="message_block">
@@ -69,7 +69,16 @@
                 const page_transition = function () {
                     if(submitted){
                         document.getElementById("form_button").disabled = true;
+                        
+                        // cookieが使えるか確認
+                        if (navigator.cookieEnabled)  
+                        {
+                            document.cookie = "boardName=" + document.getElementById("form").getElementsByTagName("div")[0].getElementsByTagName("input")[0].value;
+                        }
+
                         window.location.reload();
+
+
                     }
                 }
             </script>    
@@ -81,6 +90,15 @@
     <footer id="page_footer">
         <p>お問い合わせ等ありましたら下記のメールアドレスまでご連絡ください<br>Email: f22ba094@chuo.ac.jp</p>
     </footer>
+
+    <script>
+        if (navigator.cookieEnabled){
+            if (document.cookie.indexOf("board") != -1){
+                var r = document.cookie.split(';')[document.cookie.indexOf("board")]
+                document.getElementById("form").getElementsByTagName("div")[0].getElementsByTagName("input")[0].value = r.split("=")[1];
+            }
+        }
+    </script>
     
 </body>
 </html>
