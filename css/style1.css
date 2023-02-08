@@ -323,7 +323,7 @@ main {
     color: #fff;
     border: 1px solid #fff;
     padding: 5px 4px;
-
+    border-top: none;
     
 }
 #tab_1{
