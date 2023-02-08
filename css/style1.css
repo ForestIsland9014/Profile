@@ -416,13 +416,7 @@ main {
 
 
 }
-@media screen and (max-width: 1220px) {
-    .portfolio_link {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: 400ms;
-    }
-}
+
 @media screen and (max-width: 1000px) {
     .portfolio_link {
         margin : 18px;
@@ -432,7 +426,13 @@ main {
         height: 46vw;
     }
 }
-
+@media screen and (max-width: 790px) {
+    .portfolio_link {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 400ms;
+    }
+}
 @media screen and (max-width: 680px) {
     .uls {
         max-width: 100%;
