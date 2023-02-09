@@ -98,7 +98,7 @@ main {
     height: 15vw; 
     max-width: 40px; 
     max-height: 40px; 
-    background-color: #fff;
+    background-color: rgb(20 223 219);
     border-radius: 10px; 
     display:flex;
     justify-content: center; 
