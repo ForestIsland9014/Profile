@@ -91,7 +91,19 @@ main {
     width: 100%;
     padding-top: 40px;
 }
-
+#color_change{
+    position: absolute;
+    right: 4.7vw; 
+    width: 15vw; 
+    height: 15vw; 
+    max-width: 40px; 
+    max-height: 40px; 
+    background-color: #fff;
+    border-radius: 10px; 
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+}
 
 .border {
     padding: 15px 25px 25px 25px;

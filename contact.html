@@ -12,7 +12,15 @@
     <link rel="icon" type="image/png" href="./img/icon.png">
 </head>
 <body>
-    <header><img src="./img/icon.png" id="header_icon"><h1 id="headstr">Contact</h1></header>
+    <header>
+        <img src="./img/icon.png" id="header_icon">
+        <h1 id="headstr">Contact</h1>
+        <div id="color_change">
+            <img src="./img/sun.png" id="light_btn" onclick="change_Page_color(this.src)" style="width: 80%;top: 15px;right: 10px;">
+        </div>
+    </header>
+    
+
     <main>
         <div id="profile_top">
             <div id="profile_img_parent">
@@ -25,7 +33,7 @@
             </div>
         </div>
 
-        <div style="border: 1px solid #fff; width: 89.8%; margin-top: 1%;"></div>
+        <div style="border: 1px solid #fff; width: 89.8%; margin-top: 1%;" id="tab_line"></div>
         <ul class="tab">
             <li><a href="./index.html" id="tab_1">&nbsp;Profile&nbsp;</a></li>
             <li><a href="./portfolio.html" id="tab_2">Portfolio</a></li>
