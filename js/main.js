@@ -20,27 +20,31 @@ function hover(obj) {
 }
 
 
-function get_bulletin_board() {
+
+function get_bulletin_board(purpose) {
     var api_url = "https://script.google.com/macros/s/AKfycbz5q6gf-tvuEM75cW5utIjFXmsxhvrkOOtFJNXu8lZ4UK4fYBle3Px3rdN3IGmdizY/exec";
     fetch(api_url).then(function (fetch_data) {
         return fetch_data.json();
     }).then(function (json) {
-        for (var i in json) {
-            let div_tag = document.createElement("div");
-            div_tag.className = "message_block";
-            div_tag.id = "message_" + (parseInt(i, 10)+1);
-            let h_tag = document.createElement("h3");
-            h_tag.textContent = (parseInt(i, 10)+1) + ". " + json[i].name;
-            let p_tag = document.createElement("p");
-            p_tag.textContent = json[i].message;
+        document.getElementById("loading_now").style.display = "inline";
+        if (purpose == "onload"){
+            for (var i in json) {
+                    let div_tag = document.createElement("div");
+                    div_tag.className = "message_block";
+                    div_tag.id = "message_" + (parseInt(i, 10)+1);
+                    let h_tag = document.createElement("h3");
+                    h_tag.textContent = (parseInt(i, 10)+1) + ". " + json[i].name;
+                    let p_tag = document.createElement("p");
+                    p_tag.textContent = json[i].message;
 
-            div_tag.appendChild(h_tag);
-            div_tag.appendChild(p_tag);
-            
-            document.getElementById("bulletin_board").appendChild(div_tag);
-            
+                    div_tag.appendChild(h_tag);
+                    div_tag.appendChild(p_tag);
+                    
+                    document.getElementById("bulletin_board").appendChild(div_tag);
+            }
         }
         document.getElementById("loading_now").style.display = "none";
+        
     });
 }
 function wait(msec) {
@@ -78,7 +82,7 @@ $(function(){
         });
         $('.headline').each( function() {
             var this_pos = $(this).offset().top;
-            if ( scroll_btm-100 > this_pos) {
+            if ( scroll_btm-80 > this_pos) {
                 $(this).css({
                     opacity: 1,
                     transform: 'translateX(0)'

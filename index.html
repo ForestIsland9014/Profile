@@ -1,22 +1,149 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>玄関</title>
-    <link rel="stylesheet" href="./css/style1.css">
+    <title>森嶋空輝 - Profile</title>
+
     <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-4-1/css/5-4-1.css">
+    <link rel="stylesheet" href="./css/style1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
+    
 </head>
-<body style="display: flex; flex-wrap: wrap; justify-content: center;">
-    <header><h1 id="headstr">玄関にいる犬</h1></header>
-    <div id="pop">
-        <p style="text-align: right;" id="close" onclick="display_control('pop');">✕</p>
-        <h2>いらっしゃませ!</h2>
-        <p style="margin-top: 20px;padding-bottom: 30px;">自己紹介ページのリンクボタンを犬が咥えて歩いているので、<br>ボタンを押して自己紹介ページに行ってね！</p>
-    </div>
-    <marquee scrollamount="30" truespeed style="display: flex;"><button id="profile_btn" style="position: absolute; font-size:30px;margin-top: 210px;" onclick="location.href='./profile.html'">自己紹介</button><img style="margin-left: 60px;width: 500px;margin-top: 20px;" src="./img/kinako1.png"></marquee>
+
+<body>
+    <header>
+        <img src="./img/icon.png" id="header_icon">
+        <h1 id="headstr">Profile</h1>
+    </header>
+    <main>
+        <div id="profile_top">
+            <div id="profile_img_parent">
+                <img src="./img/profile_img.png" id="profile_img">
+            </div>
+            <div id="profile_name">
+                <p>中央情報大学校</p>
+                <p style="margin-top: -3px;" id="department">情報システム学科 フューチャーデバイス専攻</p>
+                <p style="font-size: 30px;" id="my_name">森嶋 空輝 - Morishima Sora</p>
+            </div>
+        </div>
+
+        <div style="border: 1px solid #fff; width: 89.8%; margin-top: 1%;"></div>
+        <ul class="tab">
+            <li><a href="./index.html" id="tab_1" style="background: #14a3cb;">&nbsp;Profile&nbsp;</a></li>
+            <li><a href="./portfolio.html" id="tab_2">Portfolio</a></li>
+            <li><a href="./board.html" id="tab_3">&nbsp;Board&nbsp;</a></li>
+            <li><a href="./contact.html" id="tab_4">&nbsp;Contact&nbsp;</a></li>
+        </ul>
+        <div class="profile_parent">
+            <div class="profile">
+                <div class="border">
+
+                    <div class="profile_txt right">
+                        <figure>
+                            <img src="./img/coffee.jpg" class="profile_sub_img">
+                        </figure>
+                        <h1 class="headline">1. 趣味</h1>
+                        <p>コーヒーを淹れることです！好きな豆はペルーアルパカで、深煎りが好きです。
+                            朝早く起きた時や午後の暇な時間に、豆を挽くところから始めます。
+                            そこでコーヒー豆と水の分量の比率を正確にすると美味しくなるらしいんですが、
+                            毎回比率を計算したり記録したりすると面倒ですよね。<br><br>
+                            そんな課題を解決するために、豆の分量から水の分量を自動で求めるサイトを作成しました！
+                            蒸らしの時間も手軽に測れるタイマー機能付きです！もしコーヒーを嗜む方がいれば是非覗いてみてくれると嬉しいです。
+                        </p>
+                        <div class="link_block" onclick="open_url('https://forestisland9014.github.io/cloud_coffee/')">
+                            <img src="./img/3_1.jpg" style="width: 110px;height: 58px;">
+                            <a class="link" href="https://forestisland9014.github.io/cloud_coffee/">
+                                <h2>雲の上のコーヒー屋</h2>
+                                <p>https://forestisland9014.github.io/cloud_coffee/</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="border">
+                    <div class="profile_txt left">
+                        <figure>
+                            <img src="./img/it.jpg" class="profile_sub_img">
+                        </figure>
+                        <h1 class="headline">2. できること</h1>
+                        <p>Pythonを用いて単純作業を効率化するシステムを開発できます!<br>
+                            最近ではサイバーパトロールコラボレイターで3つのシステムを開発しました。
+                            私の簡単な経験も記載しておきます。
+                        </p>
+                        <br><br>
+                        <div class="uls">
+                            <ul>
+                                <ol>【環境】</ol>
+                                <li>Git</li>
+                                <li>Github</li>
+                                <li>GCP</li>
+                                <li>Docker</li>
+                                <li>Heroku</li>
+                                <li>Unity</li>
+
+                            </ul>
+                            <ul id="second_ul">
+                                【言語】
+                                <li>C#</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <p>
+                            主にスクレイピングをメインに学び、QiitaやLINEのオープンチャットなどを開設し、
+                            常に情報を共有しています。スクレイピング以外は広く浅くで学んでいるので、これからは
+                            深く学ぶ分野を増やしていこうと考えています。主にはAI分野を深く学んでいく予定です。
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="profile">
+                <div class="border">
+
+                    <div class="profile_txt right">
+                        <figure>
+                            <img src="./img/portfolio.png" class="profile_sub_img">
+                        </figure>
+                        <h1 class="headline">3. ポートフォリオ</h1>
+                        <p>私が今まで作成したシステムやアプリの紹介です！
+                            中学生の頃にクレーンゲームの3Dゲームを開発し、それから現在までに開発した代表的なシステムを掲載しました。
+                            開発環境やこだわりポイントなど記載したので、もしよろしければご覧ください！
+                            下記のリンク、もしくはページ上部のタブ「Portfolio」からアクセスできます。
+                        </p>
+                        <div class="link_block" onclick="open_url('./portfolio.html')">
+                            <img src="./img/portfolio.png" style="width: 110px;height: 58px;">
+                            <a class="link" href="./portfolio.html">
+                                <h2>ポートフォリオ</h2>
+                                <p>portfolio.html</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="page_footer">
+        <p>お問い合わせ等ありましたら下記のメールアドレスまでご連絡ください<br>Email: f22ba094@chuo.ac.jp</p>
+    </footer>
+
 </body>
+
 </html>

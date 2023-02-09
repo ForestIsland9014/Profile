@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自由掲示板</title>
+    <title>Board</title>
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-4-1/css/5-4-1.css">
     <link rel="stylesheet" href="./css/style1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
     <link rel="icon" type="image/png" href="./img/icon.png">
 </head>
-<body onload="get_bulletin_board();">
-    <header><img src="./img/icon.png" id="header_icon"><h1 id="headstr">自由掲示板</h1></header>
+<body onload="get_bulletin_board('onload');">
+    <header><img src="./img/icon.png" id="header_icon"><h1 id="headstr">Board</h1></header>
     <main>
         <div id="profile_top">
             <div id="profile_img_parent">
@@ -27,7 +27,7 @@
 
         <div style="border: 1px solid #fff; width: 89.8%; margin-top: 1%;"></div>
         <ul class="tab">
-            <li><a href="./profile.html" id="tab_1">&nbsp;Profile&nbsp;</a></li>
+            <li><a href="./index.html" id="tab_1">&nbsp;Profile&nbsp;</a></li>
             <li><a href="./portfolio.html" id="tab_2">Portfolio</a></li>
             <li><a href="./board.html" id="tab_3" style="background: #14a3cb;">&nbsp;Board&nbsp;</a></li>
             <li><a href="./contact.html" id="tab_4">&nbsp;Contact&nbsp;</a></li>
@@ -52,6 +52,7 @@
             <div id="loading_now" style="display: flex; justify-content: center;">
                 <img src="./img/loading.gif">
             </div>
+
             <div style="border: 1px solid #dadada; width: 80%; margin: 60px auto 30px auto"></div>
             <form id="form" target="hidden_iframe"onsubmit="submitted=true;" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5eSvEhqiLQXEHGis3mYXCFzqvZ8Bpbq2M7nGayo_Udj_fHw/formResponse" method="POST">
                 <div style="width: 90%; margin: 0 auto;">
